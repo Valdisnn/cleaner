@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.Info">
+   <children>
+      <Label layoutX="34.0" layoutY="68.0" prefHeight="255.0" prefWidth="477.0" text="Это простое решение для оптимизации и мониторинга вашей системы. С помощью этой программы вы сможете легко и быстро очистить вашу систему от временных файлов, которые занимают ценное место на диске и замедляют работу системы. Кроме того, программа позволяет вам тестировать соединение с сетью, чтобы вы всегда знали, работает ли ваша сеть правильно и какое качество соединения у вас есть. Программа также предоставляет вам информацию о вашей системе, версии ОС, модель и наименование процессора, а также количество доступной и используемой памяти." wrapText="true">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="123.0" layoutY="44.0" onAction="#sendToSite" text="https://niu.ranepa.ru">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Hyperlink>
+      <Label layoutX="34.0" layoutY="47.0" prefHeight="21.0" prefWidth="97.0" text="Связаться:">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

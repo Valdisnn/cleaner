@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="825.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+   <children>
+      <AnchorPane prefHeight="565.0" prefWidth="237.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="containerButtons" layoutX="-6.0" layoutY="148.0" prefHeight="391.0" prefWidth="256.0" spacing="20.0" style="-fx-background-color: #be003e; -fx-background-radius: 8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="7.0" top="130.0" />
+               </padding>
+               <children>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#temp" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #be003e;" text="Очистка tmp" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/FileCleaner.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkNetwork" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #be003e;" text="Тест сети" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/Busting.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#infoPC" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #be003e;" text="О системе" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/Settings.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#info" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #be003e;" text="О программе" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/InformationAboutPC.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect></VBox>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="83.0" prefWidth="250.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="107.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="62.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                     <image>
+                        <Image url="@../pictures/Icons/Logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="-4.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane layoutX="250.0" layoutY="-4.0" prefHeight="12.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
+         <children>
+            <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeProgram" prefHeight="28.0" prefWidth="35.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="534.0" translateY="1.0">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+                     <image>
+                        <Image url="@../pictures/Icons/Exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="32.0" prefHeight="525.0" prefWidth="578.0">
+         <center>
+            <Label opacity="0.3" prefHeight="137.0" prefWidth="179.0" text="Hello Ranepa =)" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
